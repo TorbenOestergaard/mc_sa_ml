@@ -3,6 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import math
+import SAtom2 as sa
+
 
 
 def transform_categorical_features(XY_raw, verbose=True):
