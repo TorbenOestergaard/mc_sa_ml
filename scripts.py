@@ -4,7 +4,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import math
 import SAtom2 as sa
-
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
 
 
 def transform_categorical_features(XY_raw, verbose=True):
