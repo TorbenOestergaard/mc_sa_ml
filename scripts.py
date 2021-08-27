@@ -4,8 +4,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import math
 import SAtom2 as sa
+
+from sklearn.preprocessing import OrdinalEncoder
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
+from sklearn.metrics import r2_score
+
 
 
 def transform_categorical_features(XY_raw, verbose=True):
