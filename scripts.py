@@ -44,7 +44,7 @@ def transform_categorical_features(XY_raw, verbose=True):
     if verbose:
       display(XY.head())
     
-    return XY
+  return XY
 
 def create_new_samples(X_pdfs, N):
   """
