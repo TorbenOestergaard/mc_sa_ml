@@ -1,6 +1,6 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/TorbenOestergaard/mc_sa_ml/blob/main/BPS_to_ML_github.ipynb)
 
-# Sensitivity Analysis and Metamodels from Monte Carlo simulations  
+# From Monte Carlo to Sensitivity Analysis and Metamodels
 Upload input-output datasets from Monte Carlo simulations and perform sensitivity analysis and construct metamodels
 
 ## Sensitivity analysis with no sampling requirements
