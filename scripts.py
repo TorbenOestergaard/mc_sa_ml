@@ -269,9 +269,20 @@ def ordinal_decode_cat_hyperparameters(cvres_df):
   numerical_attr = cvres_df.select_dtypes(include=['float64', 'int64']).columns
   ord_attr = cvres_df.select_dtypes(exclude=['float64', 'int64']).columns
 
+  # If ordinal column contains tuple, tuple values are first transformed to  
+  # unique strings. Otherwise, small_pipeline sometimes fails.
+  for col in ord_attr:
+    if type(cvres_df[col].unique()[0]) == tuple:
+      for tup in cvres_df[col].unique():
+        cum_str = ''
+        for val in tup:
+          cum_str = cum_str + '_' + str(val)
+        cvres_df.loc[cvres_df[col] == tup, col] = cum_str
+
   ordinal_pipeline = Pipeline([('encode', OrdinalEncoder())])
   small_pipeline = ColumnTransformer([("ord", ordinal_pipeline, ord_attr)], 
                                     remainder='passthrough')
+  
   cvres_df = small_pipeline.fit_transform(cvres_df)
 
   # Convert transformed array to frame and reinsert RMSE as first column
