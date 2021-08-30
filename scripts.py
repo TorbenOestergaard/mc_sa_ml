@@ -146,7 +146,7 @@ def sa_multiple(X, Y, J=50, include_SA_all=False, sort_by=None, figsize='auto'):
   """
   
   n_outputs = Y.shape[1] + 1 if include_SA_all else Y.shape[1]
-  n_inputs = Y.shape[1]
+  n_inputs = X.shape[1]
   Y_SA = np.zeros([X.shape[1], Y.shape[1]])
 
   # Loop and perform SA for each output
