@@ -10,7 +10,7 @@ Get visual overview on how much the model inputs affect each output parameter.
 ## Use metamodels to estimate input space more thoroughly
 Train neural networks for individual, or all, outputs. These fast metamodels can be make additional predictions within the multi-dimensional input space. Or used to run optimization.
 
-## Work online, using Drive, or locally
+## Work online, using Google drive, or run locally
 Depending on your Python experience and privacy concerns, you have different options to use this notebook. 
 
 1. Run the Github Notebook online using Colab
