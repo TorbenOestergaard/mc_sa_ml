@@ -4,7 +4,7 @@
 Upload input-output datasets from Monte Carlo simulations and perform sensitivity analysis and construct metamodels
 
 ## Sensitivity analysis with no sampling requirements
-The applied sensitivity analysis, TOM, does not require a specific sampling strategy.
+The applied sensitivity analysis, TOM, does not require a specific sampling strategy.  
 Get visual overview on how much the model inputs affect each output parameter.
 
 ## Use metamodels to estimate input space more thoroughly
